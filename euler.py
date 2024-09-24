@@ -1,11 +1,8 @@
-for i in range(1000):
-    divisions = 0
-    for j in range(i+1):
-        if j == 0:
-            continue
-        
-        if i%j == 0:
-            divisions += 1
-            
-    if divisions == 2:
-        print(i)
+e = 1
+i = 1
+fact_index = 1
+while i <= 10**9:
+    e += 1/i
+    fact_index += 1
+    i *= fact_index
+print(e)
